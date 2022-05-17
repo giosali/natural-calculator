@@ -1,0 +1,16 @@
+.Heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.Heading__h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.Heading__p {
+  font-size: 1.125em;
+}
