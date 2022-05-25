@@ -1,0 +1,31 @@
+.ToasterNotification {
+  animation: slidein 2s ease-in-out forwards;
+  background: linear-gradient(45deg, #eee, white);
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px gray;
+  display: flex;
+  gap: 0.5em;
+  left: 50%;
+  padding: 0.5em 1em;
+  position: absolute;
+  text-align: center;
+  top: 85%;
+}
+
+@keyframes slidein {
+
+  from {
+    transform: translate(-50%, 10em);
+  }
+
+  75% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+}
