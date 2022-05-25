@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-size: calc(1vw + 0.6em);
   --primary-color: #6E70FF;
+  --secondary-color: #6EB8FF;
 }
 
 *,
