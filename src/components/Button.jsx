@@ -4,19 +4,21 @@ import PropTypes from 'prop-types';
 
 import '../stylesheets/Button.css';
 
-function Button({ content, onClick }) {
+function Button({ icon, title, onClick }) {
   return (
     <button
       className="Button"
       onClick={onClick}
+      title={title}
       type="button"
     >
-      {content}
+      <i className={`Button__icon ${icon}`} />
     </button>
   );
 }
 Button.propTypes = {
-  content: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
