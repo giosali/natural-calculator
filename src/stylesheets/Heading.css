@@ -17,3 +17,7 @@
 .Heading__p {
   font-size: 1.125em;
 }
+
+body.dark .Heading__p {
+  color: var(--dark-scheme-color);
+}

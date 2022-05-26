@@ -1,12 +1,16 @@
 .ToggleSwitch {
   align-items: center;
   background-color: transparent;
-  border: 1px solid lightgray;
+  border: 1px solid var(--light-scheme-border-color);
   border-radius: 20px;
   display: flex;
   gap: 8px;
   position: relative;
   transition: background-color 0.2s linear;
+}
+
+body.dark .ToggleSwitch {
+  border: 1px solid var(--dark-scheme-border-color);
 }
 
 .ToggleSwitch--toggleon {
