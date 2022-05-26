@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import '../stylesheets/Calculator.css';
+import Button from './Button';
 import ToasterNotification from './ToasterNotification';
 import tryParse from '../core/math/shuntingYardAlgorithm';
 
@@ -39,13 +40,7 @@ function Calculator() {
         />
         <div className={`Calculator__separator ${output ? '' : 'Calculator__separator--hidden'}`} />
         <div className={`Calculator__output ${output ? '' : 'Calculator__output--hidden'}`}>
-          <button
-            className="Calculator__icon"
-            onClick={copyToClipboard}
-            type="button"
-          >
-            &#128203;
-          </button>
+          <Button content="&#128203;" action={copyToClipboard} />
           <p className="Calculator__result">{output}</p>
         </div>
       </div>
