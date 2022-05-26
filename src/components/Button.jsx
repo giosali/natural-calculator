@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import '../stylesheets/Button.css';
 
-function Button({ content, action }) {
+function Button({ content, onClick }) {
   return (
     <button
       className="Button"
-      onClick={action}
+      onClick={onClick}
       type="button"
     >
       {content}
@@ -17,7 +17,7 @@ function Button({ content, action }) {
 }
 Button.propTypes = {
   content: PropTypes.string.isRequired,
-  action: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Button;
