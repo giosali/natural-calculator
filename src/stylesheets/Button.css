@@ -1,0 +1,14 @@
+.Button {
+  background: transparent;
+  border: 1.125px solid lightgray;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.125em;
+  padding: 0.15em;
+  transition: background 0.15s linear, border 0.15s linear;
+}
+
+.Button:hover {
+  background: var(--primary-color);
+  border: 1.125px solid black;
+}
