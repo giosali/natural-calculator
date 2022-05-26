@@ -1,0 +1,60 @@
+.ToggleSwitch {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  transition: background-color 0.2s linear;
+}
+
+.ToggleSwitch--toggleon {
+  background-color: var(--primary-color);
+}
+
+.ToggleSwitch--toggleoff {
+  background-color: transparent;
+}
+
+.ToggleSwitch>span {
+  padding: 0.25em 0.125em;
+  text-align: center;
+}
+
+.ToggleSwitch__switch {
+  background-color: #DEDEDE;
+  border-radius: 25px;
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  z-index: 100;
+}
+
+.ToggleSwitch__switch--toggleon {
+  animation: toggleon 0.2s linear forwards;
+}
+
+.ToggleSwitch__switch--toggleoff {
+  animation: toggleoff 0.2s linear forwards;
+}
+
+@keyframes toggleon {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes toggleoff {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
