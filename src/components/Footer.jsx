@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../stylesheets/Footer.css';
+import Button from './Button';
 import ToggleSwitch from './ToggleSwitch';
 
 function Footer() {
@@ -30,12 +31,19 @@ function Footer() {
 
   const handleToggle = () => setPrefersColorSchemeDark(!prefersColorSchemeDark);
 
+  const handleClick = () => window.open('https://github.com', '_blank');
+
   return (
     <div className="Footer">
       <ToggleSwitch
         states={['☀️', '🌙']}
         isToggled={!prefersColorSchemeDark}
         onToggle={handleToggle}
+      />
+      <Button
+        icon="fa fa-github"
+        title="View source code on GitHub"
+        onClick={handleClick}
       />
     </div>
   );
