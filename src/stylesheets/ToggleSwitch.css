@@ -7,11 +7,19 @@
   display: flex;
   gap: 8px;
   position: relative;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear, border 0.2s linear;
 }
 
 body.dark .ToggleSwitch {
   border: 1px solid var(--dark-scheme-border-color);
+}
+
+.ToggleSwitch:hover {
+  border: 1px solid var(--dark-scheme-border-color);
+}
+
+body.dark .ToggleSwitch:hover {
+  border: 1px solid var(--light-scheme-border-color);
 }
 
 .ToggleSwitch--toggleon {
@@ -32,8 +40,17 @@ body.dark .ToggleSwitch {
   border-radius: 25px;
   height: 100%;
   position: absolute;
+  transition: background-color 0.2s linear;
   width: 50%;
   z-index: 100;
+}
+
+.ToggleSwitch:hover .ToggleSwitch__switch {
+  background-color: #CECECE;
+}
+
+body.dark .ToggleSwitch:hover .ToggleSwitch__switch {
+  background-color: #EEEEEE;
 }
 
 .ToggleSwitch__switch--toggleon {
