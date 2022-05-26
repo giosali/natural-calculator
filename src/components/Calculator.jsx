@@ -41,7 +41,8 @@ function Calculator() {
         <div className={`Calculator__separator ${output ? '' : 'Calculator__separator--hidden'}`} />
         <div className={`Calculator__output ${output ? '' : 'Calculator__output--hidden'}`}>
           <Button
-            content="&#128203;"
+            icon="fa fa-clipboard"
+            title="Copy to clipboard"
             onClick={copyToClipboard}
           />
           <p className="Calculator__result">{output}</p>
