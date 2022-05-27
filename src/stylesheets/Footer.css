@@ -5,3 +5,15 @@
   gap: 1em;
   margin: 8em 0 0 0;
 }
+
+@media (min-width: 50em) {
+  .Footer {
+    margin: 5em 0 0 0;
+  }
+}
+
+@media (min-width: 67.5em) {
+  .Footer {
+    margin: 4em 0 0 0;
+  }
+}

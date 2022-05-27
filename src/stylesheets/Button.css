@@ -3,9 +3,27 @@
   border: 1.125px solid var(--light-scheme-border-color);
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 0.4em;
   transition: background 0.15s linear, border 0.15s linear;
+}
+
+@media (min-width: 35em) {
+  .Button {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .Button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 67.5em) {
+  .Button {
+    font-size: 0.85rem;
+  }
 }
 
 body.dark .Button {
