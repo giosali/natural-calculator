@@ -31,7 +31,7 @@ function Footer() {
 
   const handleToggle = () => setPrefersColorSchemeDark(!prefersColorSchemeDark);
 
-  const handleClick = () => window.open('https://github.com', '_blank');
+  const handleClick = () => window.open('https://github.com/giosali/natural-calculator', '_blank');
 
   return (
     <div className="Footer">
