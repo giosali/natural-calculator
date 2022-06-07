@@ -9,9 +9,14 @@
 .Heading__h1 {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   background-clip: text;
+  cursor: default;
   font-size: 2.5em;
   text-align: center;
   -webkit-text-fill-color: transparent;
+}
+
+.Heading__h1::selection {
+  background: transparent;
 }
 
 .Heading__p {
